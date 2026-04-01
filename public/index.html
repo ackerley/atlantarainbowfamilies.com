@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainbow Families Playdates — Atlanta</title>
+  <meta name="description" content="Atlanta Rainbow Families Playdates — currently on hiatus. Open to any family that considers themselves a Rainbow Family.">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      color: #333;
+      background: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header with rainbow ribbons */
+    .header {
+      position: relative;
+      text-align: center;
+      padding: 40px 20px 20px;
+      overflow: hidden;
+    }
+
+    .header-rainbow-left,
+    .header-rainbow-right {
+      position: absolute;
+      top: 0;
+      width: 300px;
+      height: auto;
+    }
+
+    .header-rainbow-left {
+      left: 0;
+    }
+
+    .header-rainbow-right {
+      right: 0;
+      transform: scaleX(-1);
+    }
+
+    .logo {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Intro */
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px 20px 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* About section */
+    .about {
+      background: #f9f9f9;
+      padding: 40px 20px;
+    }
+
+    .about h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .feature img {
+      width: 64px;
+      height: 64px;
+      flex-shrink: 0;
+    }
+
+    .feature p {
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    /* Hiatus notice */
+    .hiatus {
+      background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 17%, #ffd700 33%, #4ecb71 50%, #45b7d1 67%, #7b68ee 83%, #c084fc 100%);
+      padding: 4px;
+      margin: 40px 20px;
+      border-radius: 16px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hiatus-inner {
+      background: #fff;
+      border-radius: 13px;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .hiatus-inner h2 {
+      font-size: 1.6rem;
+      color: #222;
+      margin-bottom: 16px;
+    }
+
+    .hiatus-inner p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    .hiatus-inner a {
+      color: #7b68ee;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .hiatus-inner a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 30px 20px 40px;
+    }
+
+    .footer img {
+      max-width: 200px;
+      width: 100%;
+      opacity: 0.7;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .header-rainbow-left,
+      .header-rainbow-right {
+        width: 150px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .hiatus-inner {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="header">
+    <img src="/assets/header-rainbow.svg" alt="" class="header-rainbow-left" aria-hidden="true">
+    <img src="/assets/header-rainbow.svg" alt="" class="header-rainbow-right" aria-hidden="true">
+    <img src="/assets/logo.svg" alt="Rainbow Families Playdates Logo" class="logo">
+  </section>
+
+  <section class="intro">
+    <p>Rainbow Families Playdates are open to any family that considers themselves a "Rainbow Family". 2SLGBTQIA+ parents and kids and their families are all welcome!</p>
+  </section>
+
+  <section class="about">
+    <h2>About Our Playdates</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="/assets/icon-families.svg" alt="Families icon">
+        <p>LGBTQ+ families and allies are welcome</p>
+      </div>
+      <div class="feature">
+        <img src="/assets/icon-kids.svg" alt="Kids icon">
+        <p>Kids of all ages are welcome</p>
+      </div>
+      <div class="feature">
+        <img src="/assets/icon-calendar.svg" alt="Calendar icon">
+        <p>Flexible, drop-in event</p>
+      </div>
+      <div class="feature">
+        <img src="/assets/icon-connections.svg" alt="Connections icon">
+        <p>Make connections and start new friendships</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hiatus">
+    <div class="hiatus-inner">
+      <h2>Playdates Are Currently on Hiatus</h2>
+      <p>Our regular playdates are on pause for now. If you would like to lead the playdates moving forward, we'd love to hear from you!</p>
+      <p>Please reach out at <a href="mailto:info@atlantarainbowfamilies.com?subject=Leading%20Playdates">info@atlantarainbowfamilies.com</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="/assets/logo.svg" alt="Rainbow Families Playdates">
+  </footer>
+
+</body>
+</html>
